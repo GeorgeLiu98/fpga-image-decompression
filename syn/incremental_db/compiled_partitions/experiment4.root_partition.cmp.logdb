@@ -1,0 +1,13 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Milestone2:Milestone2_unit|lpm_mult:Mult0|mult_86t:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Milestone2:Milestone2_unit|lpm_mult:Mult2|mult_86t:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Milestone2:Milestone2_unit|lpm_mult:Mult1|mult_86t:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Milestone2:Milestone2_unit|lpm_mult:Mult3|mult_86t:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Milestone2:Milestone2_unit|lpm_mult:Mult2|mult_86t:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Milestone2:Milestone2_unit|lpm_mult:Mult0|mult_86t:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Milestone2:Milestone2_unit|lpm_mult:Mult3|mult_86t:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Milestone2:Milestone2_unit|lpm_mult:Mult1|mult_86t:auto_generated|mac_out4,
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,Milestone2:Milestone2_unit|lpm_mult:Mult2|mult_86t:auto_generated|mac_mult3,
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,Milestone2:Milestone2_unit|lpm_mult:Mult0|mult_86t:auto_generated|mac_mult3,
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,Milestone2:Milestone2_unit|lpm_mult:Mult3|mult_86t:auto_generated|mac_mult3,
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,Milestone2:Milestone2_unit|lpm_mult:Mult1|mult_86t:auto_generated|mac_mult3,

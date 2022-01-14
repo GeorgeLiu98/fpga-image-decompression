@@ -1,0 +1,101 @@
+
+State Machine - |experiment4|top_state
+Name top_state.S_Milestone_2 top_state.S_Milestone_1 top_state.S_UART_RX top_state.S_IDLE 
+top_state.S_IDLE 0 0 0 0 
+top_state.S_UART_RX 0 0 1 1 
+top_state.S_Milestone_1 0 1 0 1 
+top_state.S_Milestone_2 1 0 0 1 
+
+State Machine - |experiment4|Milestone2:Milestone2_unit|m2_state
+Name m2_state.S_m2_lead_out_WS m2_state.S_m2_lead_out_CS m2_state.S_m2_CT_WS m2_state.S_m2_CS_FS m2_state.S_m2_CS_FS_dummy_read m2_state.S_m2_lead_in_CT m2_state.S_m2_lead_in_FS m2_state.S_m2_dummy_lead_out_CS 
+m2_state.S_m2_lead_in_FS 0 0 0 0 0 0 0 0 
+m2_state.S_m2_lead_in_CT 0 0 0 0 0 1 1 0 
+m2_state.S_m2_CS_FS_dummy_read 0 0 0 0 1 0 1 0 
+m2_state.S_m2_CS_FS 0 0 0 1 0 0 1 0 
+m2_state.S_m2_CT_WS 0 0 1 0 0 0 1 0 
+m2_state.S_m2_lead_out_CS 0 1 0 0 0 0 1 0 
+m2_state.S_m2_lead_out_WS 1 0 0 0 0 0 1 0 
+m2_state.S_m2_dummy_lead_out_CS 0 0 0 0 0 0 1 1 
+
+State Machine - |experiment4|Milestone1:Milestone1_unit|state
+Name state.S_lead_out_9 state.S_lead_out_8 state.S_lead_out_7 state.S_lead_out_6 state.S_lead_out_5 state.S_lead_out_4 state.S_lead_out_3 state.S_lead_out_2 state.S_lead_out_1 state.S_lead_out_0 state.S_lead_out_common_5 state.S_lead_out_common_4 state.S_lead_out_common_3 state.S_lead_out_common_2 state.S_lead_out_common_1 state.S_lead_out_common_0 state.S_common_11 state.S_common_10 state.S_common_9 state.S_common_8 state.S_common_7 state.S_common_6 state.S_common_5 state.S_common_4 state.S_common_3 state.S_common_2 state.S_common_1 state.S_common_0 state.S_lead_in_21 state.S_lead_in_20 state.S_lead_in_19 state.S_lead_in_18 state.S_lead_in_17 state.S_lead_in_16 state.S_lead_in_15 state.S_lead_in_14 state.S_lead_in_13 state.S_lead_in_12 state.S_lead_in_11 state.S_lead_in_10 state.S_lead_in_9 state.S_lead_in_8 state.S_lead_in_7 state.S_lead_in_6 state.S_lead_in_5 state.S_lead_in_4 state.S_lead_in_3 state.S_lead_in_2 state.S_lead_in_1 state.S_m1_IDLE 
+state.S_m1_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.S_lead_in_1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.S_lead_in_2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.S_lead_in_3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.S_lead_in_4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.S_lead_in_5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.S_lead_in_6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.S_lead_in_7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.S_lead_in_8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.S_lead_in_9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.S_lead_in_10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_in_11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_in_12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_in_13 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_in_14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_in_15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_in_16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_in_17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_in_18 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_in_19 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_in_20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_in_21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_common_0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_common_1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_common_2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_common_3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_common_4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_common_5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_common_6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_common_7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_common_8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_common_9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_common_10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_common_11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_out_common_0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_out_common_1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_out_common_2 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_out_common_3 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_out_common_4 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_out_common_5 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_out_0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_out_1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_out_2 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_out_3 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_out_4 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_out_5 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_out_6 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_out_7 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_out_8 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S_lead_out_9 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |experiment4|UART_SRAM_interface:UART_unit|UART_SRAM_state
+Name UART_SRAM_state.S_US_WRITE_SECOND_BYTE UART_SRAM_state.S_US_START_SECOND_BYTE_RECEIVE UART_SRAM_state.S_US_WRITE_FIRST_BYTE UART_SRAM_state.S_US_START_FIRST_BYTE_RECEIVE UART_SRAM_state.S_US_STRIP_FILE_HEADER_2 UART_SRAM_state.S_US_STRIP_FILE_HEADER_1 UART_SRAM_state.S_US_IDLE 
+UART_SRAM_state.S_US_IDLE 0 0 0 0 0 0 0 
+UART_SRAM_state.S_US_STRIP_FILE_HEADER_1 0 0 0 0 0 1 1 
+UART_SRAM_state.S_US_STRIP_FILE_HEADER_2 0 0 0 0 1 0 1 
+UART_SRAM_state.S_US_START_FIRST_BYTE_RECEIVE 0 0 0 1 0 0 1 
+UART_SRAM_state.S_US_WRITE_FIRST_BYTE 0 0 1 0 0 0 1 
+UART_SRAM_state.S_US_START_SECOND_BYTE_RECEIVE 0 1 0 0 0 0 1 
+UART_SRAM_state.S_US_WRITE_SECOND_BYTE 1 0 0 0 0 0 1 
+
+State Machine - |experiment4|UART_SRAM_interface:UART_unit|UART_receive_controller:UART_RX|RXC_state
+Name RXC_state.S_RXC_STOP_BIT RXC_state.S_RXC_ASSEMBLE_DATA RXC_state.S_RXC_SYNC RXC_state.S_RXC_IDLE 
+RXC_state.S_RXC_IDLE 0 0 0 0 
+RXC_state.S_RXC_SYNC 0 0 1 1 
+RXC_state.S_RXC_ASSEMBLE_DATA 0 1 0 1 
+RXC_state.S_RXC_STOP_BIT 1 0 0 1 
+
+State Machine - |experiment4|VGA_SRAM_interface:VGA_unit|VGA_SRAM_state
+Name VGA_SRAM_state.S_VS_FETCH_PIXEL_DATA_3 VGA_SRAM_state.S_VS_FETCH_PIXEL_DATA_2 VGA_SRAM_state.S_VS_FETCH_PIXEL_DATA_1 VGA_SRAM_state.S_VS_FETCH_PIXEL_DATA_0 VGA_SRAM_state.S_VS_NEW_PIXEL_ROW_DELAY_5 VGA_SRAM_state.S_VS_NEW_PIXEL_ROW_DELAY_4 VGA_SRAM_state.S_VS_NEW_PIXEL_ROW_DELAY_3 VGA_SRAM_state.S_VS_NEW_PIXEL_ROW_DELAY_2 VGA_SRAM_state.S_VS_NEW_PIXEL_ROW_DELAY_1 VGA_SRAM_state.S_VS_WAIT_NEW_PIXEL_ROW 
+VGA_SRAM_state.S_VS_WAIT_NEW_PIXEL_ROW 0 0 0 0 0 0 0 0 0 0 
+VGA_SRAM_state.S_VS_NEW_PIXEL_ROW_DELAY_1 0 0 0 0 0 0 0 0 1 1 
+VGA_SRAM_state.S_VS_NEW_PIXEL_ROW_DELAY_2 0 0 0 0 0 0 0 1 0 1 
+VGA_SRAM_state.S_VS_NEW_PIXEL_ROW_DELAY_3 0 0 0 0 0 0 1 0 0 1 
+VGA_SRAM_state.S_VS_NEW_PIXEL_ROW_DELAY_4 0 0 0 0 0 1 0 0 0 1 
+VGA_SRAM_state.S_VS_NEW_PIXEL_ROW_DELAY_5 0 0 0 0 1 0 0 0 0 1 
+VGA_SRAM_state.S_VS_FETCH_PIXEL_DATA_0 0 0 0 1 0 0 0 0 0 1 
+VGA_SRAM_state.S_VS_FETCH_PIXEL_DATA_1 0 0 1 0 0 0 0 0 0 1 
+VGA_SRAM_state.S_VS_FETCH_PIXEL_DATA_2 0 1 0 0 0 0 0 0 0 1 
+VGA_SRAM_state.S_VS_FETCH_PIXEL_DATA_3 1 0 0 0 0 0 0 0 0 1 
